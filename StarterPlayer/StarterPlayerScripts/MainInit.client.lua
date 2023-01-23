@@ -1,0 +1,7 @@
+wait()
+pcall(function()
+	local starterGui = game:GetService('StarterGui')
+	starterGui:SetCore("TopbarEnabled", false)
+end)
+game.ReplicatedStorage.Remotes.Server.LoadSlot:InvokeServer()
+--game.ReplicatedStorage.Remotes.Client.UseSkill:FireServer("Slash")
